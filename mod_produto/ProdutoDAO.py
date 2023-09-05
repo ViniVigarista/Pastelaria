@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from mod_produto.Produto import produto
+from mod_produto.Produto import Produto
 
 router = APIRouter()
 # Criar as rotas/endpoints: GET, POST, PUT, DELETE
