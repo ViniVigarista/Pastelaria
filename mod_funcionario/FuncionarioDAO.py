@@ -1,3 +1,6 @@
+import db
+from mod_funcionario.funcionarioModel import FuncionarioDB
+
 from fastapi import APIRouter
 from mod_funcionario.Funcionario import Funcionario
 
