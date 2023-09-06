@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 
-class CLiente(BaseModel):
+class Cliente(BaseModel):
     id_cliente: int = None
     nome: str
     cpf: str

@@ -10,10 +10,10 @@ content-type: application/json
 
 {
     "id_cliente" : 1,
-    "nome" : "Vinicius",
+    "nome" : "Vinicius Campos",
     "cpf": "43851804821",
-    "compra_fiado": "",
-    "dia_fiado": "30/08/2023",
+    "compra_fiado": "1",
+    "dia_fiado": "",
     "senha": "Vasco123"
 }
 ### Verbo PUT – atualiza
