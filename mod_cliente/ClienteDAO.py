@@ -57,10 +57,9 @@ def put_cliente(id: int, corpo: Cliente):
         ClienteDB.id_cliente == id).one()
         dados.nome = corpo.nome
         dados.cpf = corpo.cpf
-        dados.telefone = corpo.telefone
-        dados.senha = corpo.senha
         dados.compra_fiado = corpo.compra_fiado
         dados.dia_fiado = corpo.dia_fiado
+        dados.senha = corpo.senha
         session.add(dados)
         session.commit()
         return {"id": dados.id_cliente}, 200
