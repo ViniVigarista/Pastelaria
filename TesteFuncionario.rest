@@ -9,8 +9,8 @@ POST http://127.0.0.1:8000/funcionario/ HTTP/1.1
 content-type: application/json
 
 {
-    "nome" : "Abc da Silva",
-    "cpf" : "01923874656",
+    "nome" : "Vinicius Campos",
+    "cpf" : "1235687543",
     "telefone" : "49988234567",
     "senha" : "bolinhas",
     "matricula" : "12345",
@@ -21,7 +21,7 @@ PUT http://127.0.0.1:8000/funcionario/2 HTTP/1.1
 content-type: application/json
 
 {
-    "nome" : "Bolinhas dos Testes",
+    "nome" : "Willi Gerber",
     "cpf" : "12345678909",
     "telefone" : "49898989",
     "senha" : "abc",
