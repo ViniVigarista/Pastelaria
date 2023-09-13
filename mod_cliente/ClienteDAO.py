@@ -4,7 +4,10 @@ from mod_cliente.ClienteModel import ClienteDB
 from fastapi import APIRouter
 from mod_cliente.Cliente import Cliente
 
-router = APIRouter()
+from fastapi import Depends
+import security
+
+router = APIRouter( dependencies=[Depends(security.verify_token), Depends(security.verify_key)] )
 
 # Criar os endpoints de Cliente: GET, POST, PUT, DELETE
 @router.get("/cliente/", tags=["Cliente"])
@@ -37,7 +40,7 @@ def get_cliente(id: int):
 def post_cliente(corpo: Cliente):
     try:
         session = db.Session()
-        dados = ClienteDB(corpo.nome, corpo.cpf, corpo.compra_fiado, corpo.dia_fiado,
+        dados = ClienteDB(None, corpo.nome, corpo.cpf, corpo.compra_fiado, corpo.dia_fiado,
                           corpo.senha)
 
         session.add(dados)
