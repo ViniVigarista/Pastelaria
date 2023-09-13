@@ -1,9 +1,9 @@
 from pydantic import BaseModel
 
 class Cliente(BaseModel):
-    id_cliente: int = None
+    id_Cliente: int = None
     nome: str
     cpf: str
-    compra_fiado: int
+    compra_fiado: float
     dia_fiado: str
     senha: str
