@@ -29,8 +29,7 @@ def get_produto(id: int):
     try:
         session = db.Session()
         # busca um com filtro
-        dados = session.query(ProdutoDB).filter(
-            ProdutoDB.id_produto == id).all()
+        dados = session.query(ProdutoDB).filter(ProdutoDB.id_produto == id).all()
         return dados, 200
     except Exception as e:
         return {"erro": str(e)}, 400
@@ -59,7 +58,7 @@ def put_produto(id: int, corpo: Produto):
     try:
         session = db.Session()
         dados = session.query(ProdutoDB).filter(
-            ProdutoDB.id_produto == id).one()
+        ProdutoDB.id_produto == id).one()
         dados.nome = corpo.nome
         dados.descricao = corpo.descricao
         dados.foto = corpo.foto
@@ -78,8 +77,7 @@ def put_produto(id: int, corpo: Produto):
 def delete_produto(id: int):
     try:
         session = db.Session()
-        dados = session.query(ProdutoDB).filter(
-            ProdutoDB.id_produto == id).one()
+        dados = session.query(ProdutoDB).filter(ProdutoDB.id_produto == id).one()
         session.delete(dados)
         session.commit()
         return {"id": dados.id_produto}, 200

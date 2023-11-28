@@ -28,8 +28,8 @@ x-token: abcBolinhasToken
 x-key: abcBolinhasKey
 
 {
-    "nome": "Refrigerante1",
-    "descricao": "Cola-Cola111",
+    "nome": "Agua",
+    "descricao": "Sem Gas",
     "foto": "2",
     "valor_unitario": "10"
 }
@@ -41,7 +41,7 @@ curl -X 'POST' \
     -H 'x-key: abcBolinhasKey'
 
 ### Verbo PUT – atualiza
-PUT http://127.0.0.1:8000/produto/2 HTTP/1.1
+PUT http://127.0.0.1:8000/produto/1 HTTP/1.1
 content-type: application/json
 x-token: abcBolinhasToken
 x-key: abcBolinhasKey
@@ -62,7 +62,7 @@ curl -X 'PUT' \
 
 
 ### Verbo DELETE - excluir
-DELETE http://127.0.0.1:8000/produto/2 HTTP/1.1
+DELETE http://127.0.0.1:8000/produto/1 HTTP/1.1
 x-token: abcBolinhasToken
 x-key: abcBolinhasKey
 ### Verbo DELETE - excluir

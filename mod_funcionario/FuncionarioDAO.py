@@ -14,7 +14,7 @@ router = APIRouter( dependencies=[Depends(security.verify_token), Depends(securi
 def get_funcionario():
     try:
         session = db.Session()
-# busca todos
+        # busca todos
         dados = session.query(FuncionarioDB).all()
         return dados, 200
     except Exception as e:
