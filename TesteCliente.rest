@@ -27,8 +27,8 @@ x-token: abcBolinhasToken
 x-key: abcBolinhasKey
 
 {    
-    "nome" : "Luciano",
-    "cpf": "1277567569-20",
+    "nome" : "Vinicius",
+    "cpf": "1273327569-20",
     "compra_fiado": "2",
     "dia_fiado": "12",
     "senha": "1234"
@@ -62,7 +62,7 @@ curl -X 'PUT' \
 
 
 ### Verbo DELETE - excluir
-DELETE http://127.0.0.1:8000/cliente/3 HTTP/1.1
+DELETE http://127.0.0.1:8000/cliente/1 HTTP/1.1
 x-token: abcBolinhasToken
 x-key: abcBolinhasKey
 ### Verbo DELETE - excluir

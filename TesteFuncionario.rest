@@ -29,8 +29,8 @@ x-token: abcBolinhasToken
 x-key: abcBolinhasKey
 
 {
-    "nome" : "Vinicius Campos",
-    "cpf" : "1235622543",
+    "nome" : "Vinicius Campos Benedet",
+    "cpf" : "1235622533",
     "telefone" : "49912234567",
     "senha" : "bolinhas",
     "matricula" : "12345",
